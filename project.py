@@ -14,5 +14,18 @@ for i in range(trials):
             failures += 1
             break
 
-print((trials-failures)/trials, '%')"""
+print((trials-failures)/trials, '%')
 
+trial=10000
+heads=0
+
+for i in range(trial):
+    if randint(0,1)==1:
+        heads+=1
+print(heads)"""
+
+die=[0,0,0,0,0]
+
+while 0 in die:
+    rand=randint(0,5)
+    
