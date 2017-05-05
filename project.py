@@ -1,6 +1,6 @@
 from random import randint, shuffle
 
-trees = ['M','M','M','O','O','O','O','B','B','B','B','B']
+"""trees = ['M','M','M','O','O','O','O','B','B','B','B','B']
 
 failures=0
 trials=100
@@ -14,4 +14,5 @@ for i in range(trials):
             failures += 1
             break
 
-print((trials-failures)/trials, '%')
+print((trials-failures)/trials, '%')"""
+
