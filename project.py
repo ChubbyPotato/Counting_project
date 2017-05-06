@@ -1,5 +1,6 @@
 from random import randint, shuffle
-"""
+
+#"""
 #1
 cards=['q','q','q','q','k','k','k','k','j','j','j','j']
 trials=10
@@ -16,13 +17,12 @@ for i in range(trials):
             ya+=1
         else:
             break
-    
-print(ya)
+
 print(100*ya/trials, '%')
-"""
-"""
+#"""
+#"""
 #2
-trials2=1000
+trials2=10
 c=['c']
 b=['t','t1','t2']
 lis=12*c+b
@@ -54,8 +54,8 @@ for i in range(trials2):
                 break
                 
 print(100*yas/trials2, "%")
-"""
-
+#"""
+#"""
 #3
 
 sib=['s1','s2','s3','s4','s5']*2
@@ -69,3 +69,4 @@ for i in range(trials3):
             yee+=1;
 
 print("Average number of pairs of siblings sitting together:", yee/trials3)
+#"""
