@@ -2,13 +2,12 @@ from random import randint, shuffle
 """
 #1
 cards=['q','q','q','q','k','k','k','k','j','j','j','j']
-cardlen= len(cards)-1
 trials=10
 ya=0
 
 for i in range(trials):
     shuffle(cards)
-    for x in range(cardlen):
+    for x in range(len(cards)-1):
         if cards[x] =='q' and cards[x+1] == 'q' and cards[x+2] == 'q' and cards[x+3] == 'q':
             ya+=1
         elif cards[x] =='k' and cards[x+1] == 'k' and cards[x+2] == 'k' and cards[x+3] == 'k':
@@ -59,10 +58,13 @@ print(100*yas/trials2, "%")
 
 #3
 
-si=['s1','s2','s3','s4','s5']*2
+sib=['s1','s2','s3','s4','s5']*2
 trials3= 10
 
 for i in range(trials3):
-    
+    shuffle(sib)
+    print(sib)
+    for j in range(len(sib)-1):
+        
 
 
