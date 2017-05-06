@@ -1,6 +1,5 @@
 from random import randint, shuffle
 
-
 cards=['q','q','q','q','k','k','k','k','j','j','j','j']
 cardlen= len(cards)-1
 trials=10
@@ -17,21 +16,25 @@ for i in range(trials):
             ya+=1
         else:
             break
+    
 print(ya)
 print(100*ya/trials, '%')
+"""
 
-trials2=10
+trials2=5
 
 c=['c']
-b=['t']
-lis=8*c+3*b
+b=['t','t1','t2']
+lis=12*c+b
 lislen=len(lis)-1
-ya=0
+yas=0
 
 for i in range(trials2):
     shuffle(lis);
-    for j in range(lislen):
-        if lis[x] == 'c' and lis[x+1] == 'c':
-            print(True)
-        else:
-            print(False)
+    t= lis.index('t')
+    t1= lis.index('t1')
+    t2= lis.index('t2')
+    print(lis)
+    #for j in range(lislen):
+        
+#print(yas)"""
