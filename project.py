@@ -31,15 +31,17 @@ yas=0
 
 for i in range(trials2):
     shuffle(lis);
+    print(lis)
     for j in range(lislen):
         if lis[j] == 'c' and lis[j+1] == 't' and lis[j+2] == "c":
-            print(True)
-        elif lis[j] == 'c' and lis[j+1] == 't1' and lis[j+2] == "c":
-            print(True)
-        elif lis[j] == 'c' and lis[j+1] == 't2' and lis[j+2] == "c":
-            print(True)
+            if lis[j] == 'c' and lis[j+1] == 't1' and lis[j+2] == "c":
+                if lis[j] == 'c' and lis[j+1] == 't2' and lis[j+2] == "c":
+                    print(True)
+                else:
+                    print(False)
+            else:
+                print(False)
         else:
             print(False)
-            break
         
         
