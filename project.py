@@ -1,5 +1,6 @@
 from random import randint, shuffle
 """
+#1
 cards=['q','q','q','q','k','k','k','k','j','j','j','j']
 cardlen= len(cards)-1
 trials=10
@@ -20,28 +21,48 @@ for i in range(trials):
 print(ya)
 print(100*ya/trials, '%')
 """
-
-trials2=5
-
+"""
+#2
+trials2=1000
 c=['c']
 b=['t','t1','t2']
 lis=12*c+b
-lislen=len(lis)-1
 yas=0
 
 for i in range(trials2):
     shuffle(lis);
-    print(lis)
-    for j in range(lislen):
-        if lis[j] == 'c' and lis[j+1] == 't' and lis[j+2] == "c":
-            if lis[j] == 'c' and lis[j+1] == 't1' and lis[j+2] == "c":
-                if lis[j] == 'c' and lis[j+1] == 't2' and lis[j+2] == "c":
-                    print(True)
-                else:
-                    print(False)
-            else:
-                print(False)
+    t= lis.index('t')
+    t1= lis.index('t1')
+    t2= lis.index('t2')
+    for j in range(trials2):
+        if t == 0 or t1 == 0 or t2 == 0:
+            yas+=0
+            break
+        elif t == 14 or t1 == 14 or t2 == 14:
+            yas+=0
+            break
         else:
-            print(False)
-        
-        
+            if lis[t-1] == 'c' and lis[t+1]:
+                if lis[t1-1] == 'c' and lis[t1+1]:
+                    if lis[t2-1] == 'c' and lis[t2+1]:
+                        yas+= 1
+                        break
+                    else:
+                        break
+                else:
+                    break
+            else:
+                break
+                
+print(100*yas/trials2, "%")
+"""
+
+#3
+
+si=['s1','s2','s3','s4','s5']*2
+trials3= 10
+
+for i in range(trials3):
+    
+
+
