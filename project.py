@@ -53,7 +53,7 @@ for i in range(trials2):
             else:
                 break
                 
-print(100*yas/trials2, "%")
+print("Probability of getting at least 2 students on either side of teacher:", 100*yas/trials2,"%")
 #"""
 #"""
 #3
