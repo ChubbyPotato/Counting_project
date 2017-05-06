@@ -1,7 +1,5 @@
 from random import randint, shuffle
 
-#"""
-#1
 cards=['q','q','q','q','k','k','k','k','j','j','j','j']
 trials=10
 ya=0
@@ -19,9 +17,7 @@ for i in range(trials):
             break
 
 print(100*ya/trials, '%')
-#"""
-#"""
-#2
+
 trials2=10
 c=['c']
 b=['t','t1','t2']
@@ -54,9 +50,6 @@ for i in range(trials2):
                 break
                 
 print("Probability of getting at least 2 students on either side of teacher:", 100*yas/trials2,"%")
-#"""
-#"""
-#3
 
 sib=['s1','s2','s3','s4','s5']*2
 trials3= 10
