@@ -60,11 +60,12 @@ print(100*yas/trials2, "%")
 
 sib=['s1','s2','s3','s4','s5']*2
 trials3= 10
+yee=0
 
 for i in range(trials3):
     shuffle(sib)
-    print(sib)
     for j in range(len(sib)-1):
-        
+        if sib[j] == sib[j+1]:
+            yee+=1;
 
-
+print("Average number of pairs of siblings sitting together:", yee/trials3)
